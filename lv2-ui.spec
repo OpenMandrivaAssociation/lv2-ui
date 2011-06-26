@@ -1,6 +1,6 @@
 Name:           lv2-ui
 Version:        2.2
-Release:        %mkrel 1
+Release:        %mkrel 2
 Summary:        LV2 UI extension
 
 Source:         http://lv2plug.in/spec/%{name}-%{version}.tar.bz2
