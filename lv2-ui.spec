@@ -9,7 +9,7 @@ License:        ISC
 Group:          System/Libraries
 BuildArch:      noarch
 BuildRequires:  waf
-Requires:       lv2core >= 0.4
+Requires:       lv2core-devel >= 0.4
 
 %description
 This extension defines an interface that can be used in LV2 plugins and
@@ -38,5 +38,7 @@ rm -rf %{buildroot}
 %clean
 rm -rf %{buildroot}
 
+%post
+lv2config
 
 %changelog
