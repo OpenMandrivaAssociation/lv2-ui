@@ -1,13 +1,12 @@
 Name:           lv2-ui
 Version:        2.2
-Release:        %mkrel 2
+Release:        %mkrel 3
 Summary:        LV2 UI extension
 
 Source:         http://lv2plug.in/spec/%{name}-%{version}.tar.bz2
 URL:            http://lv2plug.in/ns/extensions/ui/
 License:        ISC
 Group:          System/Libraries
-BuildArch:      noarch
 BuildRequires:  waf
 Requires:       lv2core-devel >= 0.4
 
@@ -22,7 +21,6 @@ reside in shared object files in an LV2 bundle.
 %{_libdir}/lv2/ui.lv2/ui.h
 %{_libdir}/lv2/ui.lv2/ui.ttl
 %{_libdir}/lv2/ui.lv2/.lock-wafbuild
-
 %prep
 %setup -q
 
