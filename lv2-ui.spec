@@ -1,6 +1,6 @@
 Name:           lv2-ui
 Version:        2.4
-Release:        1
+Release:        2
 Summary:        LV2 UI extension
 
 Source:         http://lv2plug.in/spec/%{name}-%{version}.tar.bz2
@@ -10,6 +10,7 @@ Group:          System/Libraries
 BuildRequires:  waf
 BuildRequires:  pkgconfig
 Requires:       lv2core-devel >= 0.4
+Buildarch:      noarch
 
 %description
 This extension defines an interface that can be used in LV2 plugins and
@@ -28,12 +29,13 @@ This package contains development files for the LV2 UI extension.
 %files
 %defattr(-,root,root,-)
 %{_libdir}/lv2/ui.lv2/manifest.ttl
-%{_libdir}/lv2/ui.lv2/ui.h
 %{_libdir}/lv2/ui.lv2/ui.ttl
 %{_libdir}/lv2/ui.lv2/lv2-ui.doap.ttl
 
 %files devel
+%{_libdir}/lv2/ui.lv2/ui.h
 %{_includedir}/lv2/lv2plug.in/ns/extensions/ui
+%{_includedir}/lv2/lv2plug.in/ns/extensions/ui/ui.h
 %{_libdir}/pkgconfig/lv2-lv2plug.in-ns-extensions-ui.pc
 
 %prep
