@@ -55,3 +55,38 @@ rm -rf %{buildroot}
 
 %clean
 rm -rf %{buildroot}
+
+
+%changelog
+* Tue Apr 17 2012 Frank Kober <emuse@mandriva.org> 2.4-4
++ Revision: 791516
+- fixed build arch which is not noarch
+
+* Sat Dec 24 2011 Frank Kober <emuse@mandriva.org> 2.4-3
++ Revision: 745045
+- fix symlinking in devel package again
+
+* Sat Dec 24 2011 Frank Kober <emuse@mandriva.org> 2.4-2
++ Revision: 745036
+- fix buildarch and devel package content
+
+* Sat Nov 26 2011 Frank Kober <emuse@mandriva.org> 2.4-1
++ Revision: 733562
+- new version 2.4
+  o devel package added for new development files
+  o file list adjusted
+  o use of lv2config in %%post dropped (as of lv2core 6.0)
+
+* Mon Jun 27 2011 Frank Kober <emuse@mandriva.org> 2.2-3
++ Revision: 687521
+- despite no binaries this is not a noarch package
+
+* Sun Jun 26 2011 Frank Kober <emuse@mandriva.org> 2.2-2
++ Revision: 687310
+- bump release after last change
+- fix BR, add lv2config to post
+
+* Fri Jun 24 2011 Frank Kober <emuse@mandriva.org> 2.2-1
++ Revision: 686942
+- imported package lv2-ui
+
